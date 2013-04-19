@@ -1,4 +1,4 @@
-jubatus Cookbook
+jubatus Cookbook [![Build Status](https://travis-ci.org/moznion/chef-jubatus.png?branch=master)](https://travis-ci.org/moznion/chef-jubatus)
 ================
 This is a chef cookbook for [Jubatus](http://jubat.us/)
 
