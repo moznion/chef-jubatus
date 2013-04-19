@@ -32,7 +32,7 @@ Attributes
     <td>Array(String)</td>
     <td>Common</td>
     <td>List of install packages</td>
-    <td><tt>['jubatus'](<- Debian), ['jubatus', 'jubatus-client'](<- RHEL)</tt></td>
+    <td><tt>['jubatus'](Debian), ['jubatus', 'jubatus-client'](RHEL)</tt></td>
   </tr>
   <tr>
     <td><tt>['jubatus']['repository']['url']</tt></td>
