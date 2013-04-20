@@ -43,11 +43,7 @@ if node['platform_family'] == 'debian'
   load_statement = "source #{base_dir}/#{node['jubatus']['environment_file']}"
 
   execute 'Add a statement to load environment variables' do
-    command <<-EOC
-      grep #{load_statement} #{node['jubatus']['profile']}
-      if [ $? -ne 0 ] ; then
-        echo "#{load_statement}" >> #{node['jubatus']['profile']}
-      fi
-    EOC
+    command %/echo "#{load_statement}" >> #{node['jubatus']['profile']}/
+    not_if { File.open(node['jubatus']['profile']).read.match(load_statement) }
   end
 end
